@@ -67,13 +67,13 @@ export const V2_ROUTER_ADDRESSES: AddressMap = {
 
 // ETHREX DEVNET
 const ETHREX_ADDRESSES: ChainAddresses = {
-  multicallAddress: '0x39786bd79Fe10D3C72427b4Cdd7923648caE149E',
-  nonfungiblePositionManagerAddress: '0xEE3E6620cb102FcD3b34782E88a4259A192bF1e9',
-  quoterAddress: '0xC4Bc792FEc97276C8E37296A4303fe5f10ab5B5F',
-  swapRouter02Address: '0xF43f8243C864A1260F2fDC4daE19c9BD76ab67F3',
-  tickLensAddress: '0xc744616E5E263B2a0BD344eb3dcD9EDeAFFe8A61',
-  v3CoreFactoryAddress: '0xdEb1481F062db511358b2497ad1C2eB23DB76225',
-  v3MigratorAddress: '0xD16759a138B4800309834377DFcd0a8d68BDb1fB'
+  multicallAddress: '0x4040a0A5EA13921Ad00f14A1ab9711e9610AA874',
+  nonfungiblePositionManagerAddress: '0xC15C9DB90e3523F3Fe45529A05E8F59A16B93486',
+  quoterAddress: '0x2051f1Ae370aB1DA2f66FA88672466170Af23196',
+  swapRouter02Address: '0x8bFCc50961F2f9c4f2F247eea04293F72088435F',
+  tickLensAddress: '0xeb6596A945014A6Bb072Fe6cd580aF8058a0eAb9',
+  v3CoreFactoryAddress: '0xAF66f763079a9026bC7324B5804f28c35f921c8b',
+  v3MigratorAddress: '0x4E1f06a3Add264D0B26c2DCBbf22d22715d1EcB8'
 }
 
 export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses> = {
@@ -180,7 +180,7 @@ export const MIXED_ROUTE_QUOTER_V1_ADDRESSES: AddressMap = SUPPORTED_CHAINS.redu
 export const SWAP_ROUTER_02_ADDRESSES = (chainId: number) => {
   if (SUPPORTED_CHAINS.includes(chainId)) {
     const id = chainId as SupportedChainsType
-    return CHAIN_TO_ADDRESSES_MAP[id].swapRouter02Address ?? '0xF43f8243C864A1260F2fDC4daE19c9BD76ab67F3' // this is the swapRouter02Address
+    return CHAIN_TO_ADDRESSES_MAP[id].swapRouter02Address ?? '0x8bFCc50961F2f9c4f2F247eea04293F72088435F' // this is the swapRouter02Address
   }
   return ''
 }
